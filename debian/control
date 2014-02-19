@@ -1,0 +1,12 @@
+Source: ros-hydro-fanuc
+Section: misc
+Priority: extra
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/fanuc
+Standards-Version: 3.9.2
+
+Package: ros-hydro-fanuc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-fanuc-assets, ros-hydro-fanuc-driver, ros-hydro-fanuc-m10ia-support, ros-hydro-fanuc-m16ib-support, ros-hydro-fanuc-m430ia-support, ros-hydro-fanuc-resources
+Description: ROS Industrial support for Fanuc manipulators (metapackage).
