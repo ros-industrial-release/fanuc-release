@@ -1,3 +1,29 @@
+## fanuc (hydro) - 0.2.0-1
+
+The packages in the `fanuc` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -t hydro -r hydro fanuc` on `Thu, 22 May 2014 13:13:51 -0000`
+
+These packages were released:
+- `fanuc`
+- `fanuc_assets`
+- `fanuc_driver`
+- `fanuc_m10ia_support`
+- `fanuc_m16ib_support`
+- `fanuc_m430ia_support`
+- `fanuc_resources`
+
+Version of package(s) in repository `fanuc`:
+- rosdistro version: `0.2.0-0`
+- old version: `0.2.0-0`
+- new version: `0.2.0-1`
+
+Versions of tools used:
+- bloom version: `0.5.8`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## fanuc - 0.2.0-0
 
 User `g.a.vanderhoorn@tudelft.nl` released the packages in the `fanuc` repository by running `/usr/bin/bloom-release --rosdistro hydro --track hydro fanuc --edit` on `Wed, 19 Feb 2014 21:24:54 -0000`
