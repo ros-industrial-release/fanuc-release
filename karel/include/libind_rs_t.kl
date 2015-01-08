@@ -1,6 +1,6 @@
 -- Software License Agreement (BSD License)
 --
--- Copyright (c) 2012, 2013, TU Delft Robotics Institute
+-- Copyright (c) 2013, Southwest Research Institute
 -- All rights reserved.
 --
 -- Redistribution and use in source and binary forms, with or without
@@ -13,7 +13,7 @@
 --    copyright notice, this list of conditions and the following
 --    disclaimer in the documentation and/or other materials provided
 --    with the distribution.
---  * Neither the name of the TU Delft Robotics Institute nor the names 
+--  * Neither the name of the Southwest Research Institute nor the names 
 --    of its contributors may be used to endorse or promote products 
 --    derived from this software without specific prior written 
 --    permission.
@@ -35,48 +35,49 @@
 
 --------------------------------------------------------------------------------
 -- 
--- libind_mth routine prototypes
+-- libind_rs shared type / constant decls
 -- 
--- author: G.A. vd. Hoorn (TU Delft Robotics Institute)
--- 
---------------------------------------------------------------------------------
-
-
-
-
---------------------------------------------------------------------------------
--- 
--- Convert given argument (in degrees) to radians
+-- author: Shaun Edwards (Southwest Research Institute)
 -- 
 --------------------------------------------------------------------------------
-ROUTINE deg_to_rad(r_deg : REAL) : REAL FROM libind_mth
 
 
 
 
 --------------------------------------------------------------------------------
 -- 
--- Convert given argument (in radians) to degrees
+-- local types & constants
 -- 
 --------------------------------------------------------------------------------
-ROUTINE rad_to_deg(r_rad : REAL) : REAL FROM libind_mth
+%INCLUDE include\libind_hdr_t
 
 
 
 
---------------------------------------------------------------------------------
--- 
--- Convert all elements of given array (in degrees) to radians
--- 
---------------------------------------------------------------------------------
-ROUTINE arr_deg2rad(a : ARRAY OF REAL) FROM libind_mth
+TYPE
+	ind_rs_t FROM libind_rs = STRUCTURE
+		header_      : ind_hdr_t    -- message header
+
+		drv_pwd_     : INTEGER      -- driver powered (tristate)
+		e_stopped_   : INTEGER      -- E Stop (tristate)
+		error_code_  : INTEGER      -- vendor specific error code
+		in_error_    : INTEGER      -- in error state (tristate)
+		in_motion_   : INTEGER      -- in motion (tristate)
+		mode_        : INTEGER      -- operational mode
+		mtn_psble_   : INTEGER      -- motion possible (tristate)
+ENDSTRUCTURE
 
 
+CONST
+	-- 
+	-- Sizes (in bytes) of robot status
+	-- 
+	RS_SZ_DATA   =   28  -- bytes: data size + header size = length
+	RS_SZ_TOPIC  =   40  -- bytes:
 
-
---------------------------------------------------------------------------------
--- 
--- Convert all elements of given array (in radians) to degrees
--- 
---------------------------------------------------------------------------------
-ROUTINE arr_rad2deg(a : ARRAY OF REAL) FROM libind_mth
+	--
+	-- Mode type
+	--
+	RS_M_UNKNWN  =   -1  -- unknown mode
+	RS_M_MAN     =    1  -- manual mode
+	RS_M_AUTO    =    2  -- auto mode

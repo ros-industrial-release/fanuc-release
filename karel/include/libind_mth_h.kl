@@ -1,6 +1,6 @@
 -- Software License Agreement (BSD License)
 --
--- Copyright (c) 2012, 2013, TU Delft Robotics Institute
+-- Copyright (c) 2012-2014 TU Delft Robotics Institute
 -- All rights reserved.
 --
 -- Redistribution and use in source and binary forms, with or without
@@ -35,17 +35,58 @@
 
 --------------------------------------------------------------------------------
 -- 
--- libind_log routine prototypes
+-- libind_mth routine prototypes
 -- 
 -- author: G.A. vd. Hoorn (TU Delft Robotics Institute)
 -- 
 --------------------------------------------------------------------------------
 
-ROUTINE log_clear FROM libind_log
-ROUTINE log_force FROM libind_log
-ROUTINE log_info(s : STRING) FROM libind_log
-ROUTINE log_info_a(s : STRING; a : INTEGER) FROM libind_log
-ROUTINE log_warn(s : STRING) FROM libind_log
-ROUTINE log_warn_a(s : STRING; a : INTEGER) FROM libind_log
-ROUTINE log_error(s : STRING) FROM libind_log
-ROUTINE log_error_a(s : STRING; a : INTEGER) FROM libind_log
+
+
+
+--------------------------------------------------------------------------------
+-- 
+-- Convert given argument (in degrees) to radians
+-- 
+-- [in    ]  r_deg        : angle in degrees
+-- [return]               : same angle in radians
+-- 
+--------------------------------------------------------------------------------
+ROUTINE deg_to_rad(r_deg : REAL) : REAL FROM libind_mth
+
+
+
+
+--------------------------------------------------------------------------------
+-- 
+-- Convert given argument (in radians) to degrees
+-- 
+-- [in    ]  r_rad        : angle in radians
+-- [return]               : same angle in degrees
+-- 
+--------------------------------------------------------------------------------
+ROUTINE rad_to_deg(r_rad : REAL) : REAL FROM libind_mth
+
+
+
+
+--------------------------------------------------------------------------------
+-- 
+-- Convert all elements of given array (in degrees) to radians
+-- 
+-- [in    ]  a            : real array (elements in degrees)
+-- 
+--------------------------------------------------------------------------------
+ROUTINE arr_deg2rad(a : ARRAY OF REAL) FROM libind_mth
+
+
+
+
+--------------------------------------------------------------------------------
+-- 
+-- Convert all elements of given array (in radians) to degrees
+-- 
+-- [in    ]  a            : real array (elements in radians)
+-- 
+--------------------------------------------------------------------------------
+ROUTINE arr_rad2deg(a : ARRAY OF REAL) FROM libind_mth
