@@ -32,90 +32,106 @@
 -- POSSIBILITY OF SUCH DAMAGE.
 
 
-PROGRAM libind_mth
+
 --------------------------------------------------------------------------------
 -- 
--- Shared math functionality
+-- libind_log routine prototypes
 -- 
 -- author: G.A. vd. Hoorn (TU Delft Robotics Institute)
 -- 
 --------------------------------------------------------------------------------
-%ALPHABETIZE
-%COMMENT = 'r2'
-%NOBUSYLAMP
-%NOLOCKGROUP
-%NOPAUSE = COMMAND + TPENABLE + ERROR
 
 
 
 
 --------------------------------------------------------------------------------
 -- 
--- local types & constants
+-- Clear and force the USER menu screen
 -- 
 --------------------------------------------------------------------------------
-
-
-
-
---------------------------------------------------------------------------------
--- 
--- local routine prototypes
--- 
---------------------------------------------------------------------------------
-%INCLUDE include\libind_mth_h
+ROUTINE log_clear FROM libind_log
 
 
 
 
 --------------------------------------------------------------------------------
 -- 
--- Empty body
+-- Force the USER menu screen
 -- 
 --------------------------------------------------------------------------------
-BEGIN
-END libind_mth
+ROUTINE log_force FROM libind_log
 
 
 
 
-ROUTINE deg_to_rad
-BEGIN
-	RETURN (r_deg * DEG_2_RAD)
-END deg_to_rad
+--------------------------------------------------------------------------------
+-- 
+-- Write INFO level string to the logging fd
+-- 
+-- [in    ]  msg          : the msg to print
+-- 
+--------------------------------------------------------------------------------
+ROUTINE log_info(msg : STRING) FROM libind_log
 
 
 
 
-ROUTINE rad_to_deg
-BEGIN
-	RETURN (r_rad * RAD_2_DEG)
-END rad_to_deg
+--------------------------------------------------------------------------------
+-- 
+-- Write INFO level string and 1 integer parameter to the logging fd
+-- 
+-- [in    ]  msg          : the msg to print
+-- [in    ]  prm          : the parameter to print
+-- 
+--------------------------------------------------------------------------------
+ROUTINE log_info_a(msg : STRING; prm : INTEGER) FROM libind_log
 
 
 
 
-ROUTINE arr_deg2rad
-VAR
-	len_ : INTEGER
-	d_   : INTEGER
-BEGIN
-	len_ = ARRAY_LEN(a)
-	FOR d_ = 1 TO len_ DO
-		a[d_] = deg_to_rad(a[d_])
-	ENDFOR
-END arr_deg2rad
+--------------------------------------------------------------------------------
+-- 
+-- Write WARN level string to the logging fd
+-- 
+-- [in    ]  msg          : the msg to print
+-- 
+--------------------------------------------------------------------------------
+ROUTINE log_warn(msg : STRING) FROM libind_log
 
 
 
 
-ROUTINE arr_rad2deg
-VAR
-	len_ : INTEGER
-	d_   : INTEGER
-BEGIN
-	len_ = ARRAY_LEN(a)
-	FOR d_ = 1 TO len_ DO
-		a[d_] = rad_to_deg(a[d_])
-	ENDFOR
-END arr_rad2deg
+--------------------------------------------------------------------------------
+-- 
+-- Write WARN level string and 1 integer parameter to the logging fd
+-- 
+-- [in    ]  msg          : the msg to print
+-- [in    ]  prm          : the parameter to print
+-- 
+--------------------------------------------------------------------------------
+ROUTINE log_warn_a(msg : STRING; prm : INTEGER) FROM libind_log
+
+
+
+
+--------------------------------------------------------------------------------
+-- 
+-- Write ERROR level string to the logging fd
+-- 
+-- [in    ]  msg          : the msg to print
+-- 
+--------------------------------------------------------------------------------
+ROUTINE log_error(msg : STRING) FROM libind_log
+
+
+
+
+--------------------------------------------------------------------------------
+-- 
+-- Write ERROR level string and 1 integer parameter to the logging fd
+-- 
+-- [in    ]  msg          : the msg to print
+-- [in    ]  prm          : the parameter to print
+-- 
+--------------------------------------------------------------------------------
+ROUTINE log_error_a(msg : STRING; prm : INTEGER) FROM libind_log
