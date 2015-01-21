@@ -1,0 +1,12 @@
+Source: ros-hydro-fanuc-m20ia10l-moveit-config
+Section: misc
+Priority: extra
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: http://wiki.ros.org/fanuc_m20ia10l_moveit_config
+Standards-Version: 3.9.2
+
+Package: ros-hydro-fanuc-m20ia10l-moveit-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-fanuc-m20ia-moveit-plugins, ros-hydro-fanuc-m20ia-support, ros-hydro-industrial-robot-simulator, ros-hydro-joint-state-publisher, ros-hydro-moveit-fake-controller-manager, ros-hydro-moveit-planners-ompl, ros-hydro-moveit-ros-move-group, ros-hydro-moveit-ros-visualization, ros-hydro-moveit-simple-controller-manager, ros-hydro-robot-state-publisher, ros-hydro-xacro
+Description: MoveIt package for the Fanuc M-20iA/10L. An automatically generated package with all the configuration and launch files for using the Fanuc M-20iA/10L with the MoveIt Motion Planning Framework. NB: this package currently uses the default MoveIt acceleration limits (ie: 1/5th of joint velocity limits), instead of the true acceleration limits for this manipulator (see issue 49).
