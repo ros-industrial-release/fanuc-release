@@ -1,3 +1,47 @@
+## fanuc (hydro) - 0.3.2-0
+
+The packages in the `fanuc` repository were released into the `hydro` distro by running `/usr/bin/bloom-release fanuc --track hydro --rosdistro hydro` on `Sun, 19 Apr 2015 07:32:52 -0000`
+
+These packages were released:
+- `fanuc`
+- `fanuc_assets`
+- `fanuc_driver`
+- `fanuc_lrmate200ic5h_moveit_config`
+- `fanuc_lrmate200ic5l_moveit_config`
+- `fanuc_lrmate200ic_moveit_config`
+- `fanuc_lrmate200ic_moveit_plugins`
+- `fanuc_lrmate200ic_support`
+- `fanuc_m10ia_moveit_config`
+- `fanuc_m10ia_moveit_plugins`
+- `fanuc_m10ia_support`
+- `fanuc_m16ib20_moveit_config`
+- `fanuc_m16ib_moveit_plugins`
+- `fanuc_m16ib_support`
+- `fanuc_m20ia10l_moveit_config`
+- `fanuc_m20ia_moveit_config`
+- `fanuc_m20ia_moveit_plugins`
+- `fanuc_m20ia_support`
+- `fanuc_m430ia2f_moveit_config`
+- `fanuc_m430ia2p_moveit_config`
+- `fanuc_m430ia_moveit_plugins`
+- `fanuc_m430ia_support`
+- `fanuc_resources`
+
+Version of package(s) in repository `fanuc`:
+- upstream repository: https://github.com/ros-industrial/fanuc.git
+- release repository: https://github.com/ros-industrial-release/fanuc-release.git
+- rosdistro version: `0.3.1-0`
+- old version: `0.3.1-0`
+- new version: `0.3.2-0`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.8`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## fanuc (hydro) - 0.3.1-0
 
 The packages in the `fanuc` repository were released into the `hydro` distro by running `/usr/bin/bloom-release fanuc --track hydro --rosdistro hydro` on `Wed, 21 Jan 2015 15:28:19 -0000`
