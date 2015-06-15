@@ -1,0 +1,12 @@
+Source: ros-hydro-fanuc
+Section: misc
+Priority: extra
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: http://wiki.ros.org/fanuc
+Standards-Version: 3.9.2
+
+Package: ros-hydro-fanuc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-fanuc-assets, ros-hydro-fanuc-driver, ros-hydro-fanuc-lrmate200ic-moveit-config, ros-hydro-fanuc-lrmate200ic-moveit-plugins, ros-hydro-fanuc-lrmate200ic-support, ros-hydro-fanuc-lrmate200ic5h-moveit-config, ros-hydro-fanuc-lrmate200ic5l-moveit-config, ros-hydro-fanuc-m10ia-moveit-config, ros-hydro-fanuc-m10ia-moveit-plugins, ros-hydro-fanuc-m10ia-support, ros-hydro-fanuc-m16ib-moveit-plugins, ros-hydro-fanuc-m16ib-support, ros-hydro-fanuc-m16ib20-moveit-config, ros-hydro-fanuc-m20ia-moveit-config, ros-hydro-fanuc-m20ia-moveit-plugins, ros-hydro-fanuc-m20ia-support, ros-hydro-fanuc-m20ia10l-moveit-config, ros-hydro-fanuc-m430ia-moveit-plugins, ros-hydro-fanuc-m430ia-support, ros-hydro-fanuc-m430ia2f-moveit-config, ros-hydro-fanuc-m430ia2p-moveit-config, ros-hydro-fanuc-resources
+Description: ROS-Industrial support for Fanuc manipulators (metapackage).
