@@ -1,13 +1,14 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>fanuc_driver</name>
-  <version>0.3.2</version>
+  <version>0.4.0</version>
   <description>
    <p>
      ROS-Industrial nodes for interfacing with Fanuc robot controllers.
    </p>
    <p>
-     This package is part of the ROS-Industrial program and contains nodes 
-     for interfacing with Fanuc industrial robot controllers that support 
+     This package is part of the ROS-Industrial program and contains nodes
+     for interfacing with Fanuc industrial robot controllers that support
      the KAREL programming environment.
    </p>
   </description>
@@ -21,8 +22,22 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>industrial_robot_client</build_depend>
-  <build_depend version_gte="1.9.55">roslaunch</build_depend>
+  <depend>industrial_robot_client</depend>
 
-  <run_depend>industrial_robot_client</run_depend>
+  <test_depend version_gte="1.9.55">roslaunch</test_depend>
+
+  <export>
+    <rosindex>
+      <tags>
+        <tag>driver</tag>
+        <tag>simple_message</tag>
+        <tag>fanuc</tag>
+        <tag>industrial</tag>
+        <tag>ros-industrial</tag>
+        <tag>KAREL</tag>
+        <tag>R-30iA</tag>
+        <tag>R-30iB</tag>
+      </tags>
+    </rosindex>
+  </export>
 </package>
