@@ -1,0 +1,13 @@
+Source: ros-indigo-fanuc-resources
+Section: misc
+Priority: extra
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://wiki.ros.org/fanuc_resources
+Standards-Version: 3.9.2
+
+Package: ros-indigo-fanuc-resources
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: Shared configuration data, 3D models and launch files for Fanuc manipulators.
+ This package contains configuration data, 3D models and launch files that are shared between different Fanuc robot support packages within the ROS-Industrial program. This package also contains common urdf / xacro resources used by other Fanuc related packages.
