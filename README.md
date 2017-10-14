@@ -1,3 +1,51 @@
+## fanuc (indigo) - 0.4.3-0
+
+The packages in the `fanuc` repository were released into the `indigo` distro by running `/usr/bin/bloom-release fanuc --track=indigo --rosdistro=indigo` on `Sat, 14 Oct 2017 16:30:48 -0000`
+
+These packages were released:
+- `fanuc`
+- `fanuc_driver`
+- `fanuc_lrmate200ic5h_moveit_config`
+- `fanuc_lrmate200ic5l_moveit_config`
+- `fanuc_lrmate200ic_moveit_config`
+- `fanuc_lrmate200ic_moveit_plugins`
+- `fanuc_lrmate200ic_support`
+- `fanuc_m10ia_moveit_config`
+- `fanuc_m10ia_moveit_plugins`
+- `fanuc_m10ia_support`
+- `fanuc_m16ib20_moveit_config`
+- `fanuc_m16ib_moveit_plugins`
+- `fanuc_m16ib_support`
+- `fanuc_m20ia10l_moveit_config`
+- `fanuc_m20ia_moveit_config`
+- `fanuc_m20ia_moveit_plugins`
+- `fanuc_m20ia_support`
+- `fanuc_m430ia2f_moveit_config`
+- `fanuc_m430ia2p_moveit_config`
+- `fanuc_m430ia_moveit_plugins`
+- `fanuc_m430ia_support`
+- `fanuc_m6ib_moveit_config`
+- `fanuc_m6ib_moveit_plugins`
+- `fanuc_m6ib_support`
+- `fanuc_resources`
+
+Version of package(s) in repository `fanuc`:
+
+- upstream repository: https://github.com/ros-industrial/fanuc.git
+- release repository: https://github.com/ros-industrial-release/fanuc-release.git
+- rosdistro version: `0.4.2-0`
+- old version: `0.4.2-0`
+- new version: `0.4.3-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.7`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## fanuc (indigo) - 0.4.2-0
 
 The packages in the `fanuc` repository were released into the `indigo` distro by running `/usr/bin/bloom-release fanuc --track indigo --rosdistro indigo` on `Mon, 22 May 2017 18:03:32 -0000`
