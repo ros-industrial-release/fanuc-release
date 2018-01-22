@@ -1,0 +1,13 @@
+Source: ros-indigo-fanuc-lrmate200ib-support
+Section: misc
+Priority: extra
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-roslaunch (>= 1.9.55)
+Homepage: http://ros.org/wiki/fanuc_lrmate200ib_support
+Standards-Version: 3.9.2
+
+Package: ros-indigo-fanuc-lrmate200ib-support
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-fanuc-driver, ros-indigo-fanuc-resources, ros-indigo-joint-state-publisher, ros-indigo-robot-state-publisher, ros-indigo-rviz, ros-indigo-xacro
+Description: ROS-Industrial support for the Fanuc LR Mate 200iB (and variants).
+ This package contains configuration data, 3D models and launch files for Fanuc LR Mate 200iB manipulators. This currently includes the base model and the /3L. Joint limits and maximum joint velocities are based on the information in the Fanuc LR Mate 200iB-200iB/3L datasheet, dated 24-Feb-2003. All urdfs are based on the default motion and joint velocity limits, unless noted otherwise (ie: no support for high speed joints, extended / limited motion ranges or other options). Before using any of the configuration files and / or meshes included in this package, be sure to check they are correct for the particular robot model and configuration you intend to use them with. Contributors: This support package has received contributions from: Victor Lamoine.
