@@ -1,0 +1,98 @@
+ros-kinetic-fanuc-resources (0.5.0-1xenial) xenial; urgency=high
+
+  * update xacro xmlns uri (#239 <https://github.com/ros-industrial/fanuc/issues/239>).
+  * remove deprecated 'common_constants.xacro' (#238 <https://github.com/ros-industrial/fanuc/issues/238>).
+  * for a complete list of changes see the commit log for 0.5.0 <https://github.com/ros-industrial/fanuc/compare/0.4.4...0.5.0>.
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Tue, 24 Sep 2019 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.4.4-1xenial) xenial; urgency=high
+
+  * add custom manifest tags to make package support level explicit.
+  * for a complete list of changes see the commit log for 0.4.4 <https://github.com/ros-industrial/fanuc/compare/0.4.3...0.4.4>.
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Sun, 21 Jan 2018 23:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.4.3-1xenial) xenial; urgency=high
+
+  * no changes.
+  * for a complete list of changes see the commit log for 0.4.3 <https://github.com/ros-industrial/fanuc/compare/0.4.2...0.4.3>.
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Fri, 13 Oct 2017 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.4.2-1xenial) xenial; urgency=high
+
+  * deprecate 'common_constants' utility xacro.
+  * add XML schema processing instruction (#200 <https://github.com/ros-industrial/fanuc/issues/200>).
+  * for a complete list of changes see the commit log for 0.4.2 <https://github.com/ros-industrial/fanuc/compare/0.4.1...0.4.2>.
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Sun, 21 May 2017 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.4.1-1xenial) xenial; urgency=high
+
+  * add approximation of Fanuc green (colour for collaborative robot series).
+  * for a complete list of changes see the commit log for 0.4.1 <https://github.com/ros-industrial/fanuc/compare/0.4.0...0.4.1>.
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Thu, 16 Jun 2016 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.4.0-1xenial) xenial; urgency=high
+
+  * first Indigo release.
+  * remove assets package (#149 <https://github.com/ros-industrial/fanuc/issues/149>).
+  * upgrade manifests to package format 2 (#115 <https://github.com/ros-industrial/fanuc/issues/115>).
+  * general cleanup of XML files (launch, manifests, roslaunch tests, xacros).
+  * add ROS Index tags to package manifests (#147 <https://github.com/ros-industrial/fanuc/issues/147>).
+  * add Roboguide colours to the set of shared resources.
+  * for a complete list of changes see the commit log for 0.4.0 <https://github.com/ros-industrial/fanuc/compare/0.3.2...0.4.0>.
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Sat, 10 Oct 2015 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.3.2-1xenial) xenial; urgency=high
+
+  * add readmes to all packages (#153 <https://github.com/ros-industrial/fanuc/issues/153>).
+  * for a complete list of changes see the commit log for 0.3.2 <https://github.com/ros-industrial/fanuc/compare/0.3.1...0.3.2>
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Sat, 18 Apr 2015 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.3.1-1xenial) xenial; urgency=high
+
+  * no changes.
+  * for a complete list of changes see the commit log for 0.3.1 <https://github.com/ros-industrial/fanuc/compare/0.3.0...0.3.1>
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Tue, 20 Jan 2015 23:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.3.0-1xenial) xenial; urgency=high
+
+  * promote experimental packages for M-10iA, M-16iB, M-20iA, M-430iA and LR Mate 200iC to main repository.
+  * add a shared constants xacro.
+  * for a complete list of changes see the commit log for 0.3.0 <https://github.com/ros-industrial/fanuc/compare/0.2.0...0.3.0>
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Wed, 07 Jan 2015 23:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.2.0-1xenial) xenial; urgency=high
+
+  * first Hydro release.
+  * deprecate fanuc_assets, introduce fanuc_resources
+  * cleanup of all CMakeLists and package manifests:
+    
+      * closing keywords should have empty parenthesis (#62 <https://github.com/ros-industrial/fanuc/issues/62>)
+      * update CMakeLists to follow Catkin CMake coding standards (#62 <https://github.com/ros-industrial/fanuc/issues/62>)
+      * ArmNav and support pkgs are architecture independent.
+    
+  * for a complete list of changes see the commit log for 0.2.0 <https://github.com/ros-industrial/fanuc/compare/0.1.1...0.2.0>
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Tue, 18 Feb 2014 23:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.1.1-1xenial) xenial; urgency=high
+
+  * fixed missing dependency
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Thu, 26 Sep 2013 22:00:00 -0000
+
+ros-kinetic-fanuc-resources (0.1.0-1xenial) xenial; urgency=high
+
+  * initial Groovy release
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Sun, 15 Sep 2013 22:00:00 -0000
+
+
