@@ -1,0 +1,13 @@
+Source: ros-kinetic-fanuc-lrmate200i-support
+Section: misc
+Priority: extra
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roslaunch
+Homepage: http://wiki.ros.org/fanuc_lrmate200i_support
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-fanuc-lrmate200i-support
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-fanuc-driver, ros-kinetic-fanuc-resources, ros-kinetic-joint-state-publisher, ros-kinetic-robot-state-publisher, ros-kinetic-rviz, ros-kinetic-xacro
+Description: ROS-Industrial support for the Fanuc LR Mate 200i.
+ This package contains configuration data, 3D models and launch files for Fanuc LR Mate 200i manipulators. This currently includes the base model only. Joint limits and maximum joint velocities are based on the information in the FANUC Robotics LR Mate 200i Datasheet version FRNA-10/9-DS-005. All urdfs are based on the default motion and joint velocity limits, unless noted otherwise (ie: no support for high speed joints, extended / limited motion ranges or other options). Before using any of the configuration files and / or meshes included in this package, be sure to check they are correct for the particular robot model and configuration you intend to use them with.
