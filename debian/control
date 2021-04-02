@@ -1,0 +1,13 @@
+Source: ros-kinetic-fanuc-m900ia-support
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roslaunch
+Homepage: http://wiki.ros.org/fanuc_m900ia_support
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-fanuc-m900ia-support
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-fanuc-driver, ros-kinetic-fanuc-resources, ros-kinetic-industrial-robot-client, ros-kinetic-joint-state-publisher-gui, ros-kinetic-robot-state-publisher, ros-kinetic-rviz, ros-kinetic-xacro
+Description: ROS-Industrial support for the Fanuc M-900iA (and variants).
+ This package contains configuration data, 3D models and launch files for Fanuc M-900iA manipulators. This currently includes the /260 model only. Specifications: M-900iA/260L - &quot;Standard Flange&quot; Joint limits and maximum joint velocities are based on the information in the FANUC Robot M-900iA/260L Mechanical Manual, Maintenance Manual version B-82135EN/05. All urdfs are based on the default motion and joint velocity limits, unless noted otherwise (ie: no support for high speed joints, extended / limited motion ranges or other options). Before using any of the configuration files and / or meshes included in this package, be sure to check they are correct for the particular robot model and configuration you intend to use them with.
