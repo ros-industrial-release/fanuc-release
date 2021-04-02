@@ -1,1 +1,1 @@
-{"trim": "", "base": "ff4931b", "trimbase": "", "parent": "debian/kinetic/fanuc_m430ia_support", "previous": "0602963"}
+{"base": "aaa11803", "parent": "debian/kinetic/fanuc_m430ia_support", "previous": "c0bc70c3", "trim": "", "trimbase": ""}
