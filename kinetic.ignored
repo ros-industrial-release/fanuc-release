@@ -22,6 +22,7 @@ fanuc_m20ib_moveit_plugins
 fanuc_m430ia2f_moveit_config
 fanuc_m430ia2p_moveit_config
 fanuc_m430ia_moveit_plugins
+fanuc_m6ib6s_moveit_config
 fanuc_m6ib_moveit_config
 fanuc_m6ib_moveit_plugins
 fanuc_r1000ia80f_moveit_config
