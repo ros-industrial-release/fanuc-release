@@ -1,1 +1,1 @@
-{"trim": "", "base": "3bcea60", "trimbase": "", "parent": "debian/kinetic/fanuc_lrmate200ib_support", "previous": "4933fd7"}
+{"base": "0f558e4d", "parent": "debian/kinetic/fanuc_lrmate200ib_support", "previous": "a26f763d", "trim": "", "trimbase": ""}
