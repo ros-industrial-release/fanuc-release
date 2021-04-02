@@ -1,1 +1,1 @@
-{"trim": "", "base": "5cbe3b8", "trimbase": "", "parent": "debian/kinetic/fanuc_m6ib_support", "previous": "05a3a95"}
+{"base": "631dce18", "parent": "debian/kinetic/fanuc_m6ib_support", "previous": "aec4ddc0", "trim": "", "trimbase": ""}
