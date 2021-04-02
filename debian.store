@@ -1,1 +1,1 @@
-{"trim": "", "base": "7261be1", "trimbase": "", "parent": "debian/kinetic/fanuc_driver", "previous": "2a80b25"}
+{"base": "85576dc2", "parent": "debian/kinetic/fanuc_driver", "previous": "5b45daa4", "trim": "", "trimbase": ""}
