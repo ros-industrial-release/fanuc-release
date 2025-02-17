@@ -1,0 +1,13 @@
+Source: ros-noetic-fanuc-lrmate200id-support
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-roslaunch <!nocheck>
+Homepage: http://wiki.ros.org/fanuc_lrmate200id_support
+Standards-Version: 3.9.2
+
+Package: ros-noetic-fanuc-lrmate200id-support
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-fanuc-driver, ros-noetic-fanuc-resources, ros-noetic-industrial-robot-client, ros-noetic-joint-state-publisher-gui, ros-noetic-robot-state-publisher, ros-noetic-rviz, ros-noetic-xacro
+Description: ROS-Industrial support for the Fanuc LR Mate 200iD (and variants).
+ This package contains configuration data, 3D models and launch files for Fanuc LR Mate 200iD manipulators. This includes the base model (/7C, /7WP), /7H, /7L, /7LC and the /4S, /4SC and /4SH. The variants in parentheses are supported by the files for the variant immediately preceeding the parentheses. Specifications: LR Mate 200iD - &quot;J1 - Normal Range&quot; LR Mate 200iD/4S - &quot;J1 - Normal Range&quot; LR Mate 200iD/4SC - &quot;J1 - Normal Range&quot; LR Mate 200iD/4SH - &quot;J1 - Normal Range; J5 - Horizontal Wrist Zero&quot; LR Mate 200iD/7H - &quot;J1 - Normal Range; J5 - Horizontal Wrist Zero&quot; LR Mate 200iD/7L - &quot;J1 - Normal Range&quot; LR Mate 200iD/7LC - &quot;J1 - Normal Range&quot; Joint limits and maximum joint velocities are based on the information in the FANUC Robot LR Mate 200iD Mechanical Unit Operator's Manual version B-83494EN/03 and the FANUC Robot LR Mate 200iD/4S/4SH/4SC Mechanical Unit Operator's Manual version B-83574EN/03. All urdfs are based on the default motion and joint velocity limits, unless noted otherwise (ie: no support for high speed joints, extended / limited motion ranges or other options). Before using any of the configuration files and / or meshes included in this package, be sure to check they are correct for the particular robot model and configuration you intend to use them with.
