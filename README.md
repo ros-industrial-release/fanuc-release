@@ -1,3 +1,81 @@
+## fanuc (noetic) - 0.6.0-1
+
+The packages in the `fanuc` repository were released into the `noetic` distro by running `/home/klaas/ros/fanuc_ws/venv_bloom/bin/bloom-release fanuc --track=noetic --rosdistro=noetic --new-track` on `Mon, 17 Feb 2025 08:34:23 -0000`
+
+These packages were released:
+- `fanuc_cr35ia_support`
+- `fanuc_cr7ia_support`
+- `fanuc_crx10ia_support`
+- `fanuc_driver`
+- `fanuc_lrmate200i_support`
+- `fanuc_lrmate200ib_support`
+- `fanuc_lrmate200ic_support`
+- `fanuc_lrmate200id_support`
+- `fanuc_m10ia_support`
+- `fanuc_m16ib_support`
+- `fanuc_m20ia_support`
+- `fanuc_m20ib_support`
+- `fanuc_m430ia_support`
+- `fanuc_m6ib_support`
+- `fanuc_m710ic_support`
+- `fanuc_m900ia_support`
+- `fanuc_m900ib_support`
+- `fanuc_r1000ia_support`
+- `fanuc_r2000ib_support`
+- `fanuc_r2000ic_support`
+- `fanuc_resources`
+
+These packages were explicitly ignored:
+- `fanuc`
+- `fanuc_cr7ia_moveit_config`
+- `fanuc_cr7ial_moveit_config`
+- `fanuc_lrmate200i_moveit_config`
+- `fanuc_lrmate200i_moveit_plugins`
+- `fanuc_lrmate200ib3l_moveit_config`
+- `fanuc_lrmate200ib_moveit_config`
+- `fanuc_lrmate200ib_moveit_plugins`
+- `fanuc_lrmate200ic5h_moveit_config`
+- `fanuc_lrmate200ic5l_moveit_config`
+- `fanuc_lrmate200ic_moveit_config`
+- `fanuc_lrmate200ic_moveit_plugins`
+- `fanuc_lrmate200id7l_moveit_config`
+- `fanuc_lrmate200id_moveit_config`
+- `fanuc_lrmate200id_moveit_plugins`
+- `fanuc_m10ia_moveit_config`
+- `fanuc_m10ia_moveit_plugins`
+- `fanuc_m16ib20_moveit_config`
+- `fanuc_m16ib_moveit_plugins`
+- `fanuc_m20ia10l_moveit_config`
+- `fanuc_m20ia_moveit_config`
+- `fanuc_m20ia_moveit_plugins`
+- `fanuc_m20ib25_moveit_config`
+- `fanuc_m20ib_moveit_plugins`
+- `fanuc_m430ia2f_moveit_config`
+- `fanuc_m430ia2p_moveit_config`
+- `fanuc_m430ia_moveit_plugins`
+- `fanuc_m6ib6s_moveit_config`
+- `fanuc_m6ib_moveit_config`
+- `fanuc_m6ib_moveit_plugins`
+- `fanuc_r1000ia80f_moveit_config`
+- `fanuc_r1000ia_moveit_plugins`
+
+Version of package(s) in repository `fanuc`:
+
+- upstream repository: https://github.com/ros-industrial/fanuc.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## fanuc (kinetic) - 0.5.1-1
 
 The packages in the `fanuc` repository were released into the `kinetic` distro by running `/tmp/fanuc_release_kinetic/venv_catkin/bin/bloom-release fanuc --rosdistro=kinetic` on `Fri, 02 Apr 2021 14:18:37 -0000`
