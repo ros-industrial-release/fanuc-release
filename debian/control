@@ -1,0 +1,13 @@
+Source: ros-noetic-fanuc-driver
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-industrial-robot-client, ros-noetic-roslaunch <!nocheck>
+Homepage: http://wiki.ros.org/fanuc_driver
+Standards-Version: 3.9.2
+
+Package: ros-noetic-fanuc-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-industrial-robot-client
+Description: ROS-Industrial nodes for interfacing with Fanuc robot controllers.
+ This package is part of the ROS-Industrial program and contains nodes for interfacing with Fanuc industrial robot controllers that support the KAREL programming environment. Refer to the readme of this package for a note on the performance of the driver.
